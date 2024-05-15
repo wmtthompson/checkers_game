@@ -1,25 +1,4 @@
 // Checkers.h
-
-
-
-class Position2D
-{
-    private:
-    int x;
-    int y;
-
-    public:
-    void move(Direction dir)
-    {
-        ;
-    }
-
-    void moveTo(Direction dir)
-    {
-        ;
-    }
-};
-
 class CheckersPlayer {
 private:
     char color;
@@ -92,5 +71,4 @@ public:
         return squares[x * height + y];
     }
 
-    // const Square& getSquare(int x, int
-};
+    const Square& getSquare(int x, int
