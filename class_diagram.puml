@@ -1,0 +1,13 @@
+@startuml class_diagram
+abstract Position2dAbstract
+Position2D <|-- Position2dAbstract
+Direction o-- Position2D
+CheckersPlayer o-- Position2D
+CheckersPlayer o-- Piece
+Piece <|-- Board
+CheckersBoard o-- Squares
+CheckersPlayer o-- Position2D
+CheckersPlayer o-- Piece
+CheckersPlayer *-- Direction2D
+CheckersGame o-- CheckersPlayer
+@enduml
